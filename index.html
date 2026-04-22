@@ -658,7 +658,7 @@ function renderTable() {
     html += '<td>' + (t.category || '') + '</td>';
     html += '<td class="amt-cell ' + t.type + '">' + sign + '$' + (t.amount || 0).toFixed(2) + '</td>';
     html += '<td>' + descText + '</td>';
-    html += '<td><button class="btn-del" onclick="confirmDel('' + t._key + '')">' + String.fromCharCode(10005) + '</button></td>';
+    html += '<td><button class="btn-del" onclick="confirmDel(\'' + t._key + '\')">' + String.fromCharCode(10005) + '</button></td>';
     html += '</tr>';
   });
   tb.innerHTML = html;
